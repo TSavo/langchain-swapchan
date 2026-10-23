@@ -1,0 +1,21 @@
+[project]
+name = "langchain-swapchan"
+version = "0.1.0"
+description = "LangChain tools for SwapChan: best-price swap and bridge quotes across every DEX aggregator and bridge, server-verified unsigned transactions, and free chain readers. No API key."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "T Robert Savo" }]
+requires-python = ">=3.9"
+dependencies = ["langchain-core>=0.3", "httpx>=0.25", "pydantic>=2"]
+keywords = ["langchain", "swap", "dex", "bridge", "defi", "agent", "solana", "evm"]
+
+[project.urls]
+Homepage = "https://swapchan.com/agents"
+Repository = "https://github.com/TSavo/langchain-swapchan"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
